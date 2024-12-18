@@ -1,12 +1,12 @@
 [build-system]
-requires = ["setuptools>=61.2"]
+requires = ["setuptools<=65.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "SynthSeg"
 version = "2.0"
 license = { file = "LICENSE.txt" }
-dependencies = [] #"numpy", "Keras<=2.4.3", "nibabel", "scipy", "matplotlib", "Pillow", "h5py", "protobuf", "requests", "requests-oauthlib", "oauthlib", "google-auth", "google-auth-oauthlib", "google-pasta", "tensorflow", "tensorflow-estimator", "tensorboard", "tensorboard-plugin-wit", "Markdown", "six", "cycler", "kiwisolver", "matplotlib", "protobuf", "scipy", "six", "termcolor", "werkzeug", "wrapt", "zipp", "astunparse", "cachetools", "certifi", "charset-normalizer", "contourpy", "fonttools", "gast", "grpcio", "idna", "importlib-metadata", "Keras-Applications", "Keras-Preprocessing", "oauthlib", "opt-einsum", "packaging", "pyasn1", "pyasn1-modules", "pyparsing", "python-dateutil", "requests", "rsa", "urllib3"]
+dependencies = []
 description = "Source code for the mri2fem book."
 authors = [
     {name = "Benjamin Billot"},
@@ -19,14 +19,6 @@ keywords = ["mri", "brain", "segmentation"]
 file = "README.md"
 content-type = "text/markdown"
 
-
-# [project.scripts]
-# mri2fem = "mri2fem.cli:main"
-
-# [project.optional-dependencies]
-# fenics = ["fenics-dolfin"]
-# svmtk = ["SVMTK"]
-# fenicsx = ["fenics-dolfinx"]
 
 
 [tool.setuptools]
@@ -45,18 +37,6 @@ test = "pytest"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-
-
-# [tool.mypy]
-# files = ["src/gotranx", "tests"]
-# ignore_missing_imports = true
-# exclude = [
-#     "docs",
-#     "examples",
-# ]
-
-# [tool.coverage.run]
-# omit = ["src/gotranx/__main__.py", "src/gotranx/templates/__init__.py"]
 
 
 [tool.ruff]
